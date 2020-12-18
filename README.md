@@ -55,3 +55,11 @@ For example; `/\d\s\w/` will produce a match for the `1 w` and the `5    p` patt
 - `/p|t/i` will match only either `p` or `t`
 - `/(p|t)yre/i`, use parentheses to evaluate a part of the expression separately before moving on
 - `/(crazy|pet|toy) rabbit/gi` or `/(crazy|pet|toy)? rabbit/gi`, remember everything before the `?` is optional
+
+## How to create Regular Expressions?
+```js
+// store in a variable
+var reg = /[a-z]/gi;
+//OR
+var reg2 = new RegExp(/[a-z]/, 'i');
+```
